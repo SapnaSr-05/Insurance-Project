@@ -1,0 +1,380 @@
+.footerContainer11 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* max-width: 110%; */
+  background-color:#334155;
+}
+
+.footerPart11 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  color: white;
+  background-color:#334155;
+  padding-left: 25px;
+}
+
+/* Add specific styling for each part here */
+
+.firstPart11 h3{
+  /* Styles for the first part */
+  margin-bottom: 0%;
+  font-size:20px;
+  padding-top:20px;
+  text-align: justify;
+
+}
+
+.secondPart11 {
+  /* Styles for the second part */
+  margin-bottom: 0%;
+
+}
+
+.thirdPart11 {
+  /* Styles for the third part */
+  margin-bottom: 0%;
+}
+
+.fourthPart11 {
+  /* Styles for the fourth part */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+  padding-right: 40px;
+}
+
+
+
+/* Add this CSS to your styles file or component */
+.icons11 {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: -5%; */
+  margin-bottom: 20px;
+}
+
+/* Styles for individual icons */
+.socialIcon11 {
+  color: rgb(72, 143, 243);
+  border-radius: 50%;
+
+  padding: 10px;
+  /* Adjust the padding as needed */
+  margin: 1px;
+  /* Adjust the margin for spacing */
+  transition: background-color 0.3s ease;
+  /* Transition effect for hover */
+  cursor: pointer;
+  margin-top: 20px;
+  height: 25px;
+}
+
+.socialIcon11:hover {
+  background-color: #555;
+  /* Change background color on hover */
+}
+
+.verticalTitles11 {
+  display: flex;
+  flex-direction: column;
+}
+
+.para11 {
+  font-size: 14px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.OurService11 {
+  padding-left: 70px;
+  font-size: 16px;
+}
+
+.serviceList11 {
+  list-style: none;
+  padding-left: 70px;
+  font-size: 16px;
+
+}
+
+.serviceList11 li {
+  /* Additional styles for list items if needed */
+  cursor: pointer;
+}
+
+/* Add this CSS to your styles file or component */
+.OurService11 {
+  padding-left: 70px;
+  font-size: 20px;
+}
+
+.QuickLinks11 {
+  padding-left: 60px;
+  font-size: 20px;
+  
+}
+
+.quickLinksList11  {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  padding-left: 60px;
+  
+}
+
+.quickLinksList11 li {
+  /* Additional styles for list items if needed */
+  cursor: pointer;
+  
+}
+
+/* Add this CSS to your styles file or component */
+
+.ContactInfo11 {
+  font-size:16px;
+}
+
+.contactList11 {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  padding-right: 70px;
+}
+
+.contactList11 li {
+  /* Additional styles for list items if needed */
+  cursor: pointer;
+}
+
+/* Add this CSS to your styles file or component */
+.placeholderrs11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  /* Adjust the width as needed */
+
+}
+
+.subscribeInput11 {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-start-start-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 55px;
+  /* Increase the height of the input area */
+  margin-right: 0;
+  /* Remove margin between input and button */
+  border-end-end-radius: none;
+  margin-top: 10%;
+
+}
+
+.subscribeButton11 {
+  padding: 8px 20px;
+  border: none;
+  border-end-end-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #346ef6;
+  /* Blue color for the button */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Transition effect */
+  height: 55px;
+  /* Increase the height of the button */
+  margin-top: 10%;
+
+}
+
+.subscribeButton11:hover {
+  background-color: #2559c1;
+  /* Darker blue on hover */
+}
+
+/* Your existing CSS styles... */
+
+
+@media screen and (max-width: 767px) {
+  .footerPart11 {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 417px) {
+  .footerPart11 {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+
+/* Updated styles for responsiveness */
+@media screen and (max-width: 767px) {
+  /* Previous media queries... */
+
+  /* Adjustments for subscription input and button */
+  .placeholderrs11 {
+    width: 100%;
+    /* Occupy full width */
+    max-width: none;
+    /* Remove maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribeInput11 {
+    width: calc(100% - 20px);
+    /* Adjust input width to fit container */
+    margin-top: 10px;
+    padding: 8px;
+  }
+
+  .subscribeButton11 {
+    width: calc(100% - 20px);
+    /* Adjust button width to fit container */
+    margin-top: 10px;
+    padding: 8px 16px;
+  }
+
+  .OurService11 {
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .serviceList11 {
+    list-style: none;
+    padding-left: 50px;
+    font-size: 13px;
+
+  }
+
+  .QuickLinks11 {
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .quickLinksList11 {
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    padding-left: 50px;
+  }
+
+  .ContactInfo11 {
+    font-size: 18px;
+  }
+
+  .contactList11 {
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+  }
+
+  .para11 {
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 5px;
+  }
+
+  .socialIcon11 {
+    color: rgb(72, 143, 243);
+    background-color: #f2efef;
+    /* Background color for the circle */
+    border-radius: 50%;
+    /* Makes it a circle */
+    padding: 8px;
+    /* Adjust the padding as needed */
+    margin: 1px;
+    /* Adjust the margin for spacing */
+    transition: background-color 0.3s ease;
+    /* Transition effect for hover */
+    cursor: pointer;
+    margin-top: 10px;
+    height: 15px;
+  }
+
+  .logo-img11 {
+    height: 50px;
+  }
+
+
+  .placeholderrs11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    /* Adjust the width as needed */
+
+
+  }
+
+  .subscribeInput11 {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 30px;
+    /* Increase the height of the input area */
+    margin-right: 0;
+    /* Remove margin between input and button */
+    border-end-end-radius: none;
+    margin-top: 10%;
+
+  }
+
+  .subscribeButton11 {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #346ef6;
+    /* Blue color for the button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transition effect */
+    height: 40px;
+    /* Increase the height of the button */
+    margin-top: 2px;
+
+  }
+
+}
+
+@media screen and (max-width: 417px) {
+
+  /* Ensure subscription input and button occupy full width */
+  .subscribeInput11,
+  .subscribeButton11 {
+    width: calc(100% - 20px);
+    /* Adjust width to fit container */
+  }
+}
+
+.footerContainer11 a {
+  color: white;
+  /* Change the color to white */
+  text-decoration: none;
+  /* Hide the underline by default */
+  /* Add additional styles as needed */
+}
+
+.footerContainer11 a:hover {
+  text-decoration: underline;
+  /* Show the underline on hover */
+}

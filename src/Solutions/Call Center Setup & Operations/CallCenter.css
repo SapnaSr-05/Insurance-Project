@@ -1,0 +1,126 @@
+/* Invest.css */
+
+.Invest-container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top:1%;
+  
+}
+
+.title5 {
+  text-align: center;
+  margin-bottom:1%;
+  font-size: 30px;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-weight:bold;
+}
+.subtitle{
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-size:16px;
+}
+
+.content5 {
+  display: flex;
+  flex-direction: row-reverse; /* Adjust to reverse the order */
+  align-items: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+.text5 {
+  width: calc(80% - 30px); /* Adjust the width of the text column */
+  font-size:16px; /* Increase the font size of the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+}
+
+.text5 p {
+  margin-top:0px; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+  text-align: justify;
+}
+
+.image-container5 {
+  width: calc(50% - 10px); /* Adjust the width of the image column */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.image-container5 img {
+  height: 340px;
+  width: 600px; /* Set the image width to fill the container */
+  margin-top: 25px;
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .Invest-container5 {
+      padding-left: 5%;
+      padding-top: 20px;
+  }
+
+  .title5 {
+    font-size: 28px;
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+  .text5 p {
+    margin-top: 0; /* Remove top margin for the paragraph */
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+
+  .content5 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text5 {
+    width: 100%;
+    font-size: 12px;
+    margin: 20px 0;
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+
+  .image-container5 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .image-container5 img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 10%;
+  }
+}
+/* Your existing styles... */
+
+/* Styles for the title */
+.subtitle {
+  font-size: 20px; /* Default font size for the title */
+  margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  /* Adjustments for smaller screens */
+
+  .title5 {
+    font-size: 24px; /* Adjust main title font size */
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+
+  .subtitle {
+    font-size: 18px; /* Adjust title font size for smaller screens */
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+
+  .text5 p {
+    font-size: 14px; /* Adjust paragraph font size */
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+}

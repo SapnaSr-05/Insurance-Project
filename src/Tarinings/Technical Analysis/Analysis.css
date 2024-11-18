@@ -1,0 +1,129 @@
+/* Insure.css */
+
+.Ana-container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.Ana-title4 {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-weight:bold;
+}
+
+.Ana-content4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+.Ana-text {
+  width: calc(80% - 30px); /* Adjust the width of the text column */
+  font-size: 16px; /* Increase the font size of the paragraph */
+}
+
+.Ana-text p {
+  margin-top: 0; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+  text-align: justify;
+  padding-right: 15px;
+}
+
+.Ana-content4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Ana-image-container4 {
+  width: calc(50% - 10px); /* Adjust the width of the image column */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Ana-image-container4 img {
+   /* Adjust the maximum width of the image */
+  height: 350px;
+  width: 500px; /* Set the image width to fill the container */
+  margin-bottom: 20px;
+  border-radius:10px;
+}
+.section-title h3 {
+  font-size:16px; /* Title font size */
+  margin-bottom: 10px; /* Bottom margin for spacing */
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .Ana-container4 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+
+  .Ana-title4 {
+    font-size: 28px;
+  }
+
+  .Ana-content4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Ana-text {
+    width: 100%;
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  .Ana-text p {
+    width: 100%;
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .Ana-image-container4 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .Ana-image-container4 img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .Ana-insure-container4 .Ana-content4 .Ana-text p {
+      font-size: 12px; /* Example smaller font size for smaller screens */
+      /* Adjust other styles as needed for responsiveness */
+    }
+    .section-title{
+      font-size: 18px;
+    }
+}
+
+
+/* Responsive styles for titles */
+@media screen and (max-width: 767px) {
+  .section-title p {
+    font-size: 5px; /* Adjust title font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 417px) {
+  .section-title p {
+    font-size: 5px; /* Further reduce title font size for very small screens */
+  }
+}

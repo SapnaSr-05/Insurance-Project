@@ -1,0 +1,164 @@
+/* Navbar.css */
+.larger-about {
+  font-size: 1em;
+  /* Adjust the font size as needed */
+}
+.a{
+  display:flex;
+    justify-content: space-around;
+    /* padding:10px; */
+    box-shadow:0 1px 3px -2px black;
+    background-color:white;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height:70px;
+    z-index:999;
+    
+}
+
+.logoStyle {
+  width: 230px;
+  /* Change the width as needed */
+  height: 70px;
+  /* Keep aspect ratio */
+  /* Add any other styles or adjustments here */
+}
+
+/* Navbar.css */
+/* Dropdown items */
+.dropdown-menu {
+  opacity: 0;
+  /* Initially, hide the dropdown items */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Add transition effect */
+  pointer-events: none;
+  /* Disable pointer events to hide dropdown items */
+  position:fixed;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  /* Position dropdown below the navbar */
+  transform: translateY(-10px);
+  /* Shift dropdown up to hide initially */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+/* Show dropdown items on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  /* Show dropdown items on hover */
+  pointer-events: auto;
+  /* Enable pointer events */
+  transform: translateY(0);
+  /* Show dropdown with slide-down animation */
+}
+
+/* Add more specific styling as needed for your dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add transition effect */
+  border-bottom: 1px solid #ddd;
+  /* Separator between items */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  /* Change background color on hover */
+  color: #007bff;
+  /* Change text color on hover */
+}
+
+/* Navbar.css */
+/* For larger screens */
+@media screen and (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .larger-about {
+    margin-left: 20px;
+  }
+}
+
+/* For smaller screens (hamburger menu) */
+@media screen and (max-width: 991px) {
+  .navbar {
+    width: 99.9%;
+    position: relative;
+    height: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+.textEffect {
+  text-decoration: none;
+  position: relative;
+  color: rgb(11, 11, 11);
+  padding: 20px;
+  font-size: 1em;
+  font-family: roboto;
+}
+
+.textEffect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 3px;
+  width: 0;
+  background-color: #e67e22;
+}
+
+.textEffect:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 3px;
+  width: 90%;
+  background-color: #e67e22;
+  transition: 0.4s ease-in;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 3px;
+  width: 90%;
+  background-color: #e67e22;
+  transition: 0.4s ease-in;
+}

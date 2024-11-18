@@ -1,0 +1,167 @@
+/* Invest.css */
+
+.Custom-container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 2%;
+  
+}
+
+.Custom-title5 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-weight:bold;
+}
+
+.Custom-content5 {
+  display: flex;
+  flex-direction: row-reverse; /* Adjust to reverse the order */
+  align-items: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+.Custom-text5 {
+  width: calc(80% - 30px); /* Adjust the width of the text column */
+  font-size:16px; /* Increase the font size of the paragraph */
+  text-align: justify;
+  
+}
+
+.Custom-text5 p {
+  margin-top:30px; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+  text-align: justify;
+  font-size:17px;
+}
+.Custom-text5 h3 {
+  padding-bottom: 2px; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-size:21px;
+  margin-top:-5px;
+  font-weight:20px;
+}
+.Custom-circle-icon{
+  padding-top: 5px;
+  font-size:16px;
+}
+.Custom-computer-list5{
+  font-size:16px;
+}
+.Custom-image-container5 {
+  width: calc(50% - 10px); /* Adjust the width of the image column */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Custom-image-container5 img {
+  height:370px;
+  width: 600px; /* Set the image width to fill the container */
+  margin-top: 38px;
+  padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .Custom-container5 {
+      padding-left: 5%;
+      padding-top: 20px;
+  }
+
+  .Custom-title5 {
+    font-size: 28px;
+  }
+
+  .Custom-content5 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Custom-text5 {
+    width: 100%;
+    font-size: 12px;
+    margin: 20px 0;
+  }
+
+  .Custom-image-container5 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .Custom-image-container5 img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 10%;
+  }
+    
+.Custom-text5 p {
+  margin-top: 0; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+}
+.Custom-text5 h3 {
+  padding-bottom: 2px; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+}
+.circle-icon{
+  font-family: "Barlow", Helvetica, Arial, serif;
+  padding-top: 5px;
+}
+}
+/* Your existing styles... */
+
+/* Styles for the circle icon and list items */
+.circle-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000; /* Change color as needed */
+  margin-right: 8px; /* Adjust margin between the circle and list item text */
+}
+
+.Custom-computer-list5 {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.Custom-computer-list5 li {
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  /* Adjustments for smaller screens */
+
+  .Custom-title5 {
+    font-size: 24px; /* Adjust title font size */
+  }
+
+  .Custom-text5 p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  .Custom-computer-list5 {
+    font-size: 14px; /* Adjust list item font size */
+  }
+    
+.Custom-text5 p {
+  margin-top: 0; /* Remove top margin for the paragraph */
+  font-family: 'Open Sans', sans-serif;
+}
+.Custom-text5 h3 {
+  padding-bottom: 2px; /* Remove top margin for the paragraph */
+  font-family: 'Open Sans', sans-serif;
+}
+.circle-icon{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 5px;
+}
+}

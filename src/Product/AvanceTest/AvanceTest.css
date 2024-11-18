@@ -1,0 +1,155 @@
+/* AvanceTest.css */
+
+.AvanceTest-container6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 4%;
+}
+
+.AvanceTest-title6 {
+  text-align: center;
+  margin-top: 30px;
+  font-size:16px;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-weight: 20;
+}
+
+.AvanceTest-content6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+.AvanceTest-text6 {
+  width: calc(80% - 30px); 
+  font-size: 16px;
+  text-align: justify;
+  font-weight:20px;
+  margin-top:40px;
+  padding-right: 20px;
+}
+
+.AvanceTest-text6 p {
+  margin-top: 0; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+  text-align: justify;
+}
+.AvanceTest-text6 h3 {
+  font-size: 21px; /* Adjust font size as needed */
+  margin-top: 15px; /* Adjust margin-top as needed */
+  font-family: "Barlow", Helvetica, Arial, serif;
+}
+
+.AvanceTest-content6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AvanceTest-computer-list6 {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; /* Adjust margin-top as needed */
+  padding-right: 20px;
+  font-size: 16px;
+  text-align: justify;
+  font-weight:20px;
+  
+}
+
+.AvanceTest-computer-list6 li {
+  padding-left: 20px; /* Adjust padding as needed */
+  position: relative;
+  line-height: 1.5; /* Adjust line height as needed */
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.AvanceTest-computer-list6 li:before {
+  content: '';
+  width: 10px; /* Adjust the width of the circle */
+  height: 10px; /* Adjust the height of the circle */
+  border-radius: 50%;
+  background-color: #333; /* Color of the circle */
+  position: absolute;
+  left: -20px; /* Adjust the position of the circle */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.AvanceTest-image-container6 {
+  width: calc(50% - 10px); /* Adjust the width of the image column */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+}
+
+.AvanceTest-image-container6 img {
+   /* Adjust the maximum width of the image */
+  height: 350px;
+  width: 500px; /* Set the image width to fill the container */
+  margin-top: 38px;
+  border-radius:10px;
+}
+
+@media (max-width: 768px) {
+  .AvanceTest-container6 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+
+  .AvanceTest-title6 {
+    font-size: 28px;
+  }
+
+  .AvanceTest-content6 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .AvanceTest-text6 {
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .AvanceTest-image-container6 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .AvanceTest-image-container6 img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .AvanceTest-container6 .AvanceTest-title6 {
+      font-size: 20px; /* Example smaller font size for smaller screens */
+      /* Adjust other title styles as needed for responsiveness */
+    }
+  
+    .AvanceTest-container6 .AvanceTest-content6 .AvanceTest-text6 p {
+      font-size: 12px; /* Example smaller font size for paragraphs */
+      /* Adjust other paragraph styles as needed for responsiveness */
+    }
+  
+    .AvanceTest-container6 .AvanceTest-content6 .AvanceTest-text6 h3 {
+      font-size: 15px; /* Example smaller font size for headings */
+      /* Adjust other heading styles as needed for responsiveness */
+    }
+  
+    .AvanceTest-container6 .AvanceTest-content6 .AvanceTest-text6 .AvanceTest-computer-list6 li {
+      font-size: 11px; /* Example smaller font size for list items */
+      /* Adjust other list item styles as needed for responsiveness */
+    }
+}

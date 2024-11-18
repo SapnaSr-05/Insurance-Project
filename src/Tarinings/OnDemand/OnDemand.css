@@ -1,0 +1,98 @@
+.OnDemand-container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 4%;
+}
+
+.OnDemand-title4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-weight:bold;
+}
+
+.OnDemand-content4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+.OnDemand-text {
+  width: calc(80% - 30px); /* Adjust the width of the text column */
+  font-size:16px; 
+}
+
+.OnDemand-text p {
+  margin-top: 0;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  text-align: justify;
+  padding-right: 15px;
+}
+
+.OnDemand-content4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.OnDemand-image-container4 {
+  width: calc(50% - 10px); /* Adjust the width of the image column */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.OnDemand-image-container4 img {
+  height: 300px;
+  width: 500px; /* Set the image width to fill the container */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .OnDemand-container4 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+
+  .OnDemand-title4 {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .OnDemand-content4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .OnDemand-text {
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .OnDemand-image-container4 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .OnDemand-image-container4 img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .OnDemand-container4 .OnDemand-content4 .OnDemand-text p {
+      font-size: 12px; /* Example smaller font size for smaller screens */
+      /* Adjust other styles as needed for responsiveness */
+      font-family: 'Open Sans', sans-serif;
+    }
+}

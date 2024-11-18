@@ -1,0 +1,105 @@
+/* Sol.css */
+.solutionsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12%;
+  margin-right: 10%;
+  padding-top: 3%;
+ /* Adjust this value as needed */
+}
+
+.leftContainer {
+  width: 48%; /* Adjust the width as needed */
+}
+
+.leftContainer h1{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.leftContainer p{
+  font-size: 16px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+.rightContainer {
+  width: 48%; /* Adjust the width as needed */
+}
+
+.topicContainer {
+  margin-top: 20px;
+}
+
+.topic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-bottom-right-radius: 17px;
+  height: 50px;
+  width: 300px; /* Adjust the width as needed */
+  margin-bottom: 10px;
+  padding-left: 5px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.topic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px; /* Adjust the position of the line */
+  height: 100%;
+  width: 3px;
+  background-color:  #6610f2;
+  border-top-left-radius: 17px; /* Rounded border for top left */
+  border-bottom-left-radius: 17px; /* Rounded border for bottom left */
+}
+
+.topic:hover {
+  background-color: #6610f2; /* Change background color on hover */
+  transform: translateX(5px); /* Move the content 5px to the right */
+  color: white;
+}
+/* Add the image styles as needed */
+.img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 767px) {
+  .solutionsContainer {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 50px; /* Adjust this value as needed */
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+  }
+
+  .topicContainer {
+    margin-top: 20px;
+  }
+  .leftContainer h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .leftContainer p{
+    font-size: 17px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .topic{
+    font-size: 16px;
+    height: 45px;
+    width: auto; 
+  }
+}

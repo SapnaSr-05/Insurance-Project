@@ -1,0 +1,135 @@
+/* Insure.css */
+
+.insure-container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 4%;
+}
+
+.title4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: "Barlow", Helvetica, Arial, serif;
+  font-weight: 600;
+}
+
+.content4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+  
+}
+
+.text {
+  width: calc(80% - 30px); /* Adjust the width of the text column */
+  font-size: 16px; /* Increase the font size of the paragraph */
+  text-align: justify;
+  font-weight:20px;
+  
+}
+
+.text p {
+  margin-top: 0; /* Remove top margin for the paragraph */
+  font-family: "Barlow", Helvetica, Arial, serif;
+  text-align: justify;
+  padding-right: 15px;
+}
+
+.content4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-container4 {
+  width: calc(50% - 10px); /* Adjust the width of the image column */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container4 img {
+   /* Adjust the maximum width of the image */
+  height: 350px;
+  width: 500px; /* Set the image width to fill the container */
+  margin-top: 25px;
+  border-radius:10px;
+
+}
+
+@media (max-width: 768px) {
+  .insure-container4 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+
+  .title4 {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .content4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .image-container4 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .image-container4 img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .insure-container4 .content4 .text p {
+      font-size: 12px; /* Example smaller font size for smaller screens */
+      /* Adjust other styles as needed for responsiveness */
+      font-family: 'Open Sans', sans-serif;
+    }
+}
+
+
+/* Insure.css */
+
+/* Other styles for the Insure component */
+/* ... */
+
+/* Styling for the modified InsureITPro text */
+.title4 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.italic-red {
+font-style: italic;
+color: red;
+top: -10px;
+}
+
+.white-background {
+color: white;
+background-color: black;
+padding:  5px; /* Adjust padding as needed */
+border-radius: 20%;
+font-size: 35px;
+margin-left: 5px;
+}

@@ -1,0 +1,41 @@
+/* Navision.css */
+
+/* Styles for desktop/tablet screens */
+.navision-container {
+    margin: 20px;
+    text-align: center;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 1%;
+  }
+  
+  .navision-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+  
+  .navision-paragraph {
+    font-size:18px;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Barlow", Helvetica, Arial, serif;
+  }
+  
+  .navision-paragraph span {
+    font-weight: bold;
+    color: #0a0a0a;
+  }
+  
+  /* Styles for mobile screens */
+  @media (max-width: 768px) {
+    .navision-title {
+      font-size: 28px; /* Adjust font size for smaller screens */
+    }
+  
+    .navision-paragraph {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  
